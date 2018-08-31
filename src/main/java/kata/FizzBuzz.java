@@ -52,4 +52,7 @@ public class FizzBuzz {
         return IntStream.range(1, end + 1).mapToObj(FizzBuzz::play).collect(Collectors.joining(", "));
     }
 
+    public static void main(String[] args) {
+        System.out.println(FizzBuzz.playTo(100));
+    }
 }
